@@ -2,7 +2,8 @@ public class  Fibonacci {
 
     public static void main(String[] args) {
 
-        FibonacciSemRecursão(5);
+        //FibonacciSemRecursão(5);
+        System.out.println(Fibonacci(6));
     }
 
     public static int FibonacciSemRecursão(int n){
@@ -31,5 +32,14 @@ public class  Fibonacci {
 
         System.out.println("Resultado: " + b);
         return b;
+    }
+
+    public static int Fibonacci(int n){
+
+        if (n <= 1){
+            return n;
+        }
+
+        return Fibonacci(n-1)+Fibonacci(n-2);
     }
 }
