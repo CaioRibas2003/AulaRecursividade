@@ -11,9 +11,7 @@ public class Fatorial {
         }
         else {
             return n*Fatorial(n-1);
+
         }
-
-
     }
-
 }
